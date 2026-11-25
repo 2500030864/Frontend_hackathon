@@ -1,0 +1,39 @@
+.rulebook-page { padding: 54px 24px 90px; }
+.rulebook-hero { padding: 48px; border: 1px solid rgba(91,110,255,.28); border-radius: 24px; background: radial-gradient(circle at 80% 20%,rgba(0,225,255,.15),transparent 34%),linear-gradient(120deg,#090e24,#15113b 60%,#09172e); color: #f8fafc; }
+.rulebook-hero h1 { font-size: clamp(36px,6vw,64px); letter-spacing: -.045em; line-height: 1.05; margin: 18px 0 12px; }
+.rulebook-hero h1 span { color: #43e6ff; text-shadow: 0 0 24px rgba(0,220,255,.35); }
+.rulebook-hero p { color: #b8c5e8; max-width: 620px; }
+.rulebook-download { margin-top: 24px; }
+.rulebook-layout { display: grid; grid-template-columns: minmax(0,1.6fr) minmax(260px,.8fr); gap: 24px; margin-top: 28px; align-items: start; }
+.rulebook-search { display:flex; align-items:center; gap:12px; padding: 15px 18px; border:1px solid rgba(129,145,190,.25); border-radius:14px; background:rgba(255,255,255,.78); color:#667085; }
+.rulebook-search input { width:100%; border:0; outline:0; background:transparent; color:#111827; }
+.rulebook-accordions { display:grid; gap:12px; margin-top:16px; }
+.rulebook-section,.rulebook-side-card { border:1px solid rgba(129,145,190,.24); border-radius:16px; background:rgba(255,255,255,.88); box-shadow:0 12px 34px rgba(30,41,80,.06); }
+.rulebook-section-trigger { width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px; border:0; background:transparent; color:#10172c; font-weight:800; text-align:left; }
+.rulebook-section-trigger span { display:flex; align-items:center; gap:14px; }
+.rulebook-index { color:#6d5dfc; font-size:12px; letter-spacing:.12em; }
+.rulebook-section.expanded .rulebook-section-trigger svg { transform:rotate(180deg); }
+.rulebook-section ol { padding:0 24px 22px 58px; color:#59647a; }
+.rulebook-section li { padding:7px 0 7px 5px; line-height:1.65; }
+.rulebook-sidebar { display:grid; gap:16px; }
+.rulebook-side-card { padding:22px; color:#202943; }
+.rulebook-side-card > svg { color:#6558ed; }
+.rulebook-side-card h3 { margin:12px 0 7px; font-size:18px; }
+.rulebook-side-card p { color:#68738a; font-size:13px; line-height:1.65; }
+.rulebook-game-list { display:flex; flex-wrap:wrap; gap:7px; margin:16px 0; }
+.rulebook-game-list span { padding:6px 9px; border-radius:8px; background:#eef0ff; color:#5145bd; font-size:11px; font-weight:700; }
+.rulebook-check { display:flex; gap:10px; margin:16px 0; align-items:flex-start; font-size:13px; color:#46516a; }
+.rulebook-check input { margin-top:4px; accent-color:#6558ed; }
+.rulebook-accepted-state { display:flex; align-items:center; gap:7px; font-size:11px; color:#16845d; font-weight:700; }
+.rulebook-empty { padding:30px; text-align:center; color:#68738a; }
+@media(max-width:800px) { .rulebook-layout { grid-template-columns:1fr; } .rulebook-hero { padding:30px 24px; } }
+@media print {
+  .navbar-container, footer, .rulebook-download, .rulebook-search, .rulebook-sidebar { display:none !important; }
+  .rulebook-page { padding:0; }
+  .rulebook-hero { background:#fff !important; color:#111 !important; border:0; padding:0 0 20px; }
+  .rulebook-hero p { color:#333; }
+  .rulebook-hero h1 span { color:#111; text-shadow:none; }
+  .rulebook-layout { display:block; margin:0; }
+  .rulebook-section { break-inside:avoid; box-shadow:none; }
+  .rulebook-section ol { display:block !important; }
+}

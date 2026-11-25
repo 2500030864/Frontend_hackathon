@@ -1,0 +1,14 @@
+.gaming-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(90deg, rgba(2,12,8,.20), rgba(2,12,8,.02)), url("/images/arena-heroes.webp") center right / cover no-repeat, radial-gradient(ellipse at 50% 45%, #123a27 0%, #06160f 58%, #030a07 100%);
+}
+.gaming-scene canvas { display: block; width: 100%; height: 100%; opacity: .55; mix-blend-mode: screen; }
+.gaming-scene::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(5,8,22,.08), transparent 45%, rgba(5,8,22,.12)),
+              linear-gradient(0deg, rgba(5,8,22,.5), transparent 55%);
+}

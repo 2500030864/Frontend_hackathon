@@ -1,0 +1,9 @@
+.global-arena-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: .72;
+}
+.global-arena-scene canvas { display: block; width: 100%; height: 100%; }
